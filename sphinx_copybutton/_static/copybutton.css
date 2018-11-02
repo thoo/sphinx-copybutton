@@ -1,12 +1,14 @@
 /* Copy buttons */
 a.copybtn {
+    background: transparent no-repeat none;
+    border:none;
     position: absolute;
     top: 0;
     right: 0;
-    margin: 5px;
+    margin: 0.5px;
     width: 1em;
-    height: 1em;
-    padding: 0 4px 2px;
+    height: 1.6em;
+    padding: 0 2px 0px;
   }
 
 div.highlight  {
@@ -24,7 +26,7 @@ div.highlight  {
  .o-tooltip--left {
   position: relative;
  }
- 
+
  .o-tooltip--left:after {
     opacity: 0;
     visibility: hidden;
@@ -39,7 +41,7 @@ div.highlight  {
     white-space: nowrap;
     z-index: 2;
     border-radius: 2px;
-    transform: translateX(-102%) translateY(0); 
+    transform: translateX(-102%) translateY(0);
     transition: opacity 0.2s cubic-bezier(0.64, 0.09, 0.08, 1), transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
 }
 
