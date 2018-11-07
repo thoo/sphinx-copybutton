@@ -67,7 +67,7 @@ const addCopyButtonToCodeCells = () => {
     return
   }
 
-  const codeCells = document.querySelectorAll('div.highlight pre')
+  const codeCells = document.querySelectorAll('div.highlight pre span:not(.go):not(.gp):not(.gt)')
   codeCells.forEach((codeCell, index) => {
     const id = codeCellId(index)
     codeCell.setAttribute('id', id)
