@@ -41,9 +41,7 @@ div.highlight  {
     content: attr(data-tooltip);
     padding: 2px;
     top: -15px;
-    left: 120%;
-    background: #3F556B;
-    font-size: 1rem;
+    left: 180%;
     color: white;
     white-space: nowrap;
     z-index: 100;
@@ -57,7 +55,7 @@ div.highlight  {
     opacity: 1;
     visibility: visible;
     top: -15px;
-    left: 120%;
+    left: 180%;
     z-index: 100;
     transform: translateX(0%) translateY(0);
     transition: opacity 0.2s cubic-bezier(0.64, 0.09, 0.08, 1), transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
