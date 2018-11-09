@@ -1,12 +1,17 @@
 /* Copy buttons */
 a.copybtn {
+    background: transparent no-repeat none;
+    border: none;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 4px;
+    right: 2px;
+    margin: 0.5px;
     width: 1em;
-    height: 1em;
-    padding: .3em;
-}
+    height: 0.6em;
+    font-size: 13px;
+    font-family: monospace;
+    text-shadow: none;
+    }
 
 div.highlight  {
     position: relative;
@@ -20,25 +25,30 @@ div.highlight  {
  *
  * <p class="o-tooltip--left" data-tooltip="Hey">Short</p>
  */
- .o-tooltip--left {
+ .o-tooltip--right {
   position: relative;
  }
- 
- .o-tooltip--left:after {
+
+ .o-tooltip--right:after {
     opacity: 0;
+    text-shadow: none;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 13px;
+    background: #3F556B;
     visibility: hidden;
     position: absolute;
     content: attr(data-tooltip);
     padding: 2px;
-    top: 0;
-    left: 0;
-    background: grey;
+    top: -15px;
+    left: 120%;
+    background: #3F556B;
     font-size: 1rem;
     color: white;
     white-space: nowrap;
-    z-index: 2;
+    z-index: 100;
     border-radius: 2px;
-    transform: translateX(-102%) translateY(0); 
+    transform: translateX(10%) translateY(0);
     transition: opacity 0.2s cubic-bezier(0.64, 0.09, 0.08, 1), transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
 }
 
@@ -46,6 +56,9 @@ div.highlight  {
     display: block;
     opacity: 1;
     visibility: visible;
-    transform: translateX(-100%) translateY(0);
+    top: -15px;
+    left: 120%;
+    z-index: 100;
+    transform: translateX(0%) translateY(0);
     transition: opacity 0.2s cubic-bezier(0.64, 0.09, 0.08, 1), transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
 }
