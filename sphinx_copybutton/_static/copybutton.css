@@ -52,7 +52,7 @@ div.highlight  {
     transition: opacity 0.2s cubic-bezier(0.64, 0.09, 0.08, 1), transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
 }
 
-.o-tooltip--left:hover:after {
+.o-tooltip--right:hover:after {
     display: block;
     opacity: 1;
     visibility: visible;
