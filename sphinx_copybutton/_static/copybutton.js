@@ -101,7 +101,7 @@ clipboard.on('success', event => {
   var htmlBlock = document.querySelectorAll('div.highlight pre'+query)[0]
   //Show Outputs and Prompts
   for (i = 0; i < class_to_remove.length; i++) {
-    toggle_prompt_output(htmlBlock, class_to_remove[i], 'none')
+    toggle_prompt_output(htmlBlock, class_to_remove[i], 'inline')
   }
 
   clearSelection()
